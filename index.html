@@ -21,18 +21,19 @@
         channel: "Damanking",
         layout: "video",
         autoplay: false,
-		volume: 0.01,
         parent: ["Damankin6.github.io"]
       });
 
       embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
         var player = embed.getPlayer();
+		player.setVolume(0.01);
         player.play();
       });
     </script>
 </center>
 </body>
 </html>
+
 
 
 
