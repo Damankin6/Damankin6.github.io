@@ -26,14 +26,15 @@
 
       embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
         var player = embed.getPlayer();
-		player.setQuality('160p')
 		player.setVolume(0.01);
         player.play();
+		player.setQuality('160p')
       });
     </script>
 </center>
 </body>
 </html>
+
 
 
 
