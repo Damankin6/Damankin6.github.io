@@ -20,12 +20,13 @@
         height: 300,
         channel: "Damanking",
         layout: "video",
-        autoplay: false,
+        autoplay: true,
         parent: ["Damankin6.github.io"]
       });
 
       embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
         var player = embed.getPlayer();
+		player.setQuality('160p')
 		player.setVolume(0.01);
         player.play();
       });
@@ -33,6 +34,7 @@
 </center>
 </body>
 </html>
+
 
 
 
