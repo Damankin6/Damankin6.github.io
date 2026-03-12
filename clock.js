@@ -11,7 +11,7 @@ function updateClock() {
 
     const timeString = new Intl.DateTimeFormat("en-US", options).format(now);
 
-    document.getElementById("clock").textContent = "Streamers Local Time: " + timeString;
+    document.getElementById("clock").textContent = "Damanking's Local Time: " + timeString;
 }
 
 setInterval(updateClock, 1000);
