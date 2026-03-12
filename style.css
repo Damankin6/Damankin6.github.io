@@ -4,6 +4,7 @@ body {
 
 	display: flex;
 	flex-direction: column;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 iframe {
@@ -12,8 +13,8 @@ iframe {
 }
 
 #header {
-	background: green;
-	height: 40px;
+	background: purple;
+	padding: 8px;
 }
 
 #page {
@@ -27,18 +28,16 @@ iframe {
 }
 
 #sidebar {
-	background: purple;
 	width: 300px;
 
 	display: flex;
 	flex-direction: column;
 }
 
-#chat {
-	flex-grow: 1;
+#twitch-embed {
+	height: 200px;
 }
 
-#twitch-embed {
-	background: yellow;
-	height: 200px;
+#chat {
+	flex-grow: 1;
 }
