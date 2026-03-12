@@ -21,10 +21,17 @@ button {
 	cursor: pointer;
 }
 
-
 #header {
 	background: black;
 	padding: 8px;
+
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+#clock {
+	color: #fff;
 }
 
 .twitch {
@@ -51,7 +58,7 @@ button {
 }
 
 #sidebar {
-	width: 340px;
+	width: 300px;
 
 	display: flex;
 	flex-direction: column;
