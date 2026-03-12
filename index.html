@@ -1,47 +1,40 @@
 <html>
 
-<body bgcolor="#000000">
-<center>
-<iframe width="75%" height="100%" src="https://www.youtube.com/embed/live_stream?channel=UCCEaaDpWeLAeloRXbK10kcA" frameborder="0" allowfullscreen>
-</iframe>
-<iframe src="https://www.twitch.tv/embed/Damanking/chat?parent=Damankin6.github.io"
-        height="100%"
-        width="20%"
-		frameborder="0">
-</iframe>
-</center>
-<center>
-    <div id="twitch-embed"></div>
-	
-    <script src="https://embed.twitch.tv/embed/v1.js"></script>
-	
-    <script type="text/javascript">
-      var embed = new Twitch.Embed("twitch-embed", {
-        width: 400,
-        height: 300,
-        channel: "Damanking",
-        layout: "video",
-        autoplay: true,
-        parent: ["Damankin6.github.io"]
-      });
+<head>
+  <link href="style.css" rel="stylesheet" />
+</head>
 
-      embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
-        var player = embed.getPlayer();
-		player.setVolume(0.01);
-        player.play();
-		player.setQuality('160p')
-      });
-    </script>
-</center>
+<body>
+  <div id="header">
+    Header
+  </div>
+  <div id="page">
+    <div id="content">
+      <iframe allowfullscreen frameborder="0" src="https://www.youtube.com/embed/live_stream?channel=UCCEaaDpWeLAeloRXbK10kcA"></iframe>
+    </div>
+    <div id="sidebar">
+      <div id="twitch-embed">
+        <script src="https://embed.twitch.tv/embed/v1.js"></script>
+        <script type="text/javascript">
+          var embed = new Twitch.Embed("twitch-embed", {
+            channel: "Damanking",
+            layout: "video",
+            autoplay: true,
+            parent: ["Damankin6.github.io"]
+          });
+          embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
+            var player = embed.getPlayer();
+            player.setVolume(0.01);
+            player.play();
+            player.setQuality('160p')
+          });
+        </script>
+      </div>
+      <div id="chat">
+        <iframe frameborder="0" src="https://www.twitch.tv/embed/Damanking/chat?parent=Damankin6.github.io"></iframe>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
