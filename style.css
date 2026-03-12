@@ -1,0 +1,44 @@
+body {
+	height: 100%;
+	margin: 0;
+
+	display: flex;
+	flex-direction: column;
+}
+
+iframe {
+	width: 100%;
+	height: 100%;
+}
+
+#header {
+	background: green;
+	height: 40px;
+}
+
+#page {
+	flex-grow: 1;
+
+	display: flex;
+}
+
+#content {
+	flex-grow: 1;
+}
+
+#sidebar {
+	background: purple;
+	width: 300px;
+
+	display: flex;
+	flex-direction: column;
+}
+
+#chat {
+	flex-grow: 1;
+}
+
+#twitch-embed {
+	background: yellow;
+	height: 200px;
+}
