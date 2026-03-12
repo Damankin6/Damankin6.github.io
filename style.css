@@ -12,9 +12,32 @@ iframe {
 	height: 100%;
 }
 
+button {
+	border: none;
+	border-radius: 20px;
+	padding: 10px 20px;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+
 #header {
-	background: purple;
+	background: black;
 	padding: 8px;
+}
+
+.twitch {
+	background-color: B869FF;
+}
+
+.youtube {
+	background-color: red;
+}
+
+.help {
+	background-color: white;
+	color: black;
 }
 
 #page {
@@ -28,7 +51,7 @@ iframe {
 }
 
 #sidebar {
-	width: 340px;
+	width: 300px;
 
 	display: flex;
 	flex-direction: column;
