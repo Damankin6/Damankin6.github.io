@@ -47,6 +47,21 @@ button {
 	color: black;
 }
 
+.Discord {
+	background-color: #7785cc;
+	color: #fff;
+}
+
+.Tip {
+	background-color: #83BA64;
+	color: #fff;
+}
+
+.MapleChar {
+	background-color: #FFA500;
+	color: #fff
+}
+
 #page {
 	flex-grow: 1;
 
@@ -58,7 +73,7 @@ button {
 }
 
 #sidebar {
-	width: 300px;
+	width: 340px;
 
 	display: flex;
 	flex-direction: column;
