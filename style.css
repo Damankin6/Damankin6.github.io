@@ -59,7 +59,7 @@ button {
 
 .MapleChar {
 	background-color: #FFA500;
-	color: #fff;
+	color: #fff
 }
 
 #page {
@@ -73,7 +73,7 @@ button {
 }
 
 #sidebar {
-	width: 340px;
+	width: 300px;
 
 	display: flex;
 	flex-direction: column;
