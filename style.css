@@ -47,19 +47,19 @@ button {
 	color: black;
 }
 
-.Discord {
+.discord {
 	background-color: #7785cc;
 	color: #fff;
 }
 
-.Tip {
+.tip {
 	background-color: #83BA64;
 	color: #fff;
 }
 
-.MapleChar {
+.maplechar {
 	background-color: #FFA500;
-	color: #fff
+	color: #fff;
 }
 
 #page {
@@ -73,7 +73,7 @@ button {
 }
 
 #sidebar {
-	width: 300px;
+	width: 340px;
 
 	display: flex;
 	flex-direction: column;
