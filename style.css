@@ -32,6 +32,7 @@ button {
 
 #clock {
 	color: #fff;
+	margin-left: auto;
 }
 
 .twitch {
@@ -59,6 +60,10 @@ button {
 
 .maplechar {
 	background-color: #FFA500;
+	color: #fff;
+}
+
+#streamStatus {
 	color: #fff;
 }
 
