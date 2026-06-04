@@ -2,40 +2,27 @@
 
 <head>
   <link href="style.css" rel="stylesheet" />
+  <script src="https://embed.twitch.tv/embed/v1.js"></script>
+  <script src="clock.js"></script>
+  <script src="twitch.js"></script>
 </head>
 
 <body>
   <div id="header">
-	<button class="twitch" onclick="window.open('https://www.twitch.tv/damanking', '_blank')" rel="noopener noreferrer">Twitch</button>
-	<button class="youtube" onclick="window.open('https://www.youtube.com/@damankingttv', '_blank')" rel="noopener noreferrer">Youtube</button>
-	<button class="Discord" onclick="window.open('https://discord.com/invite/3JXcp9G7c8', '_blank')" rel="noopener noreferrer">Discord</button>
-	<button class="tip" onclick="window.open('https://streamlabs.com/damanking/tip', '_blank')" rel="noopener noreferrer">Donation</button>
-	<button class="maplechar" onclick="window.open('https://maplescouter.com/ko/info?name=CuteFeet', '_blank')" rel="noopener noreferrer">Maplestory Char</button>
-	  <button class="TC" onclick="window.open('https://TeraClassic.com/', '_blank')" rel="noopener noreferrer">TERA Classic</button>
-	<div id="clock"><script src="clock.js"></script></div>
+    <a class="twitch" href="https://www.twitch.tv/damanking" target="_blank" rel="noreferrer">Twitch</a>
+    <a class="youtube" href="https://www.youtube.com/@damankingttv" target="_blank" rel="noreferrer">YouTube</a>
+    <a class="discord" href="https://discord.com/invite/3JXcp9G7c8" target="_blank" rel="noreferrer">Discord</a>
+    <a class="tip" href="https://streamlabs.com/damanking/tip" target="_blank" rel="noreferrer">Donation</a>
+    <a class="maplechar" href="https://maplescouter.com/ko/info?name=CuteFeet" target="_blank" rel="noreferrer">Maplestory Char</a>
+    <a class="tc" href="https://teraclassic.com/" target="_blank" rel="noreferrer">TERA Classic</a>
+    <div id="clock"></div>
   </div>
   <div id="page">
     <div id="content">
       <iframe allowfullscreen frameborder="0" src="https://www.youtube.com/embed/live_stream?channel=UCCEaaDpWeLAeloRXbK10kcA"></iframe>
     </div>
     <div id="sidebar">
-      <div id="twitch-embed">
-        <script src="https://embed.twitch.tv/embed/v1.js"></script>
-        <script type="text/javascript">
-          var embed = new Twitch.Embed("twitch-embed", {
-            channel: "Damanking",
-            layout: "video",
-            autoplay: true,
-            parent: ["Damankin6.github.io"]
-          });
-          embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
-            var player = embed.getPlayer();
-            player.setVolume(0.01);
-            player.play();
-            player.setQuality('160p')
-          });
-        </script>
-      </div>
+      <div id="twitch-embed"></div>
       <div id="chat">
         <iframe frameborder="0" src="https://www.twitch.tv/embed/Damanking/chat?darkpopout&parent=Damankin6.github.io"></iframe>
       </div>

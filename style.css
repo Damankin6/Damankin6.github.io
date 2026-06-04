@@ -14,8 +14,10 @@ iframe {
 	height: 100%;
 }
 
-button {
+a {
 	border: none;
+	font-size: small;
+	text-decoration: none;
 	border-radius: 20px;
 	padding: 10px 20px;
 	color: #fff;
@@ -38,11 +40,11 @@ button {
 }
 
 .twitch {
-	background-color: B869FF;
+	background-color: #9147FF;
 }
 
 .youtube {
-	background-color: red;
+	background-color: #FF0033;
 }
 
 .help {
@@ -51,27 +53,27 @@ button {
 }
 
 .discord {
-	background-color: #7785cc;
-	color: #fff;
+	background-color: #5865F2;
+	color: white;
 }
 
 .tip {
 	background-color: #83BA64;
-	color: #fff;
+	color: white;
 }
 
 .maplechar {
 	background-color: #FFA500;
-	color: #fff;
+	color: white;
 }
 
 .TC {
 	background-color: #69CBFF;
-	color: #fff;
+	color: white;
 }
 
 #streamStatus {
-	color: #fff;
+	color: white;
 }
 
 #page {
